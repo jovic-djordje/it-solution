@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bad+Script&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Text:wght@200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syncopate:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section-one {
+  background-color: #0a3d62;
+}
+
+.section-one-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.section-one-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.section-one-left-width {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.logo-holder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  max-width: 100px;
+  width: 100%;
+}
+
+.logo-holder p {
+  font-family: "Mozilla Text";
+  text-transform: uppercase;
+  max-width: 200px;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  font-style: italic;
+}
+
+.header-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.section-one-title {
+  color: #079992;
+  font-family: "Mozilla Text";
+  font-size: 74px;
+  font-weight: 400;
+}
+
+.section-one-btn {
+  max-width: 200px;
+  width: 100%;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 20px;
+  color: #079992;
+  background: transparent;
+  font-family: "Mozilla Text";
+  font-size: 15px;
+  border: 2px solid #079992;
+}
+
+.section-one-btn:hover {
+  background-color: #079992;
+  color: #0a3d62;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.section-one-img {
+  max-width: 650px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1350px) {
+  .section-one-holder {
+    padding: 30px 0px;
+  }
+
+  .section-one-left-width {
+    width: 90%;
+  }
+
+  .section-one-title {
+    font-size: 66px;
+  }
+
+  .section-one-img {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .logo-holder {
+    margin-bottom: 0px;
+  }
+
+  .section-one-left-width {
+    gap: 30px;
+  }
+
+  .section-one-holder {
+    padding: 20px 0px;
+  }
+
+  .header-holder {
+    gap: 30px;
+  }
+
+  .section-one-img {
+    max-width: 450px;
+  }
+
+  .section-one-title {
+    font-size: 58px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section-one-title {
+    font-size: 48px;
+  }
+
+  .section-one-btn {
+    max-width: 180px;
+  }
+
+  .section-one-img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section-one-holder {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .section-one-left-width {
+    max-width: 850px;
+  }
+
+  .section-one-img {
+    max-width: 850px;
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo-holder p {
+    font-size: 20px;
+  }
+
+  .logo {
+    max-width: 90px;
+  }
+
+  .section-one-title {
+    font-size: 40px;
+  }
+
+  .section-one-btn {
+    max-width: 150px;
+    font-size: 14px;
+  }
+}
