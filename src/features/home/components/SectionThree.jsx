@@ -31,7 +31,7 @@ const SectionThree = () => {
         <h2 className="section-three-title">Our services</h2>
         <div className="section-three-cards-holder">
           {sectionThreeCard.map((card) => (
-            <div className="section-three-card">
+            <div className="section-three-card" key={card.id}>
               {card.image}
               <h4 className="section-three-card-title">{card.title}</h4>
               <p className="section-three-card-text">{card.text}</p>

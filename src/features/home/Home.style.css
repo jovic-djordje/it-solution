@@ -214,6 +214,75 @@
   border-radius: 10px 10px 0px 0px;
 }
 
+/* SECTION FOUR */
+.section-four {
+  padding: 70px 0px;
+  font-family: "Mozilla Text";
+  background-color: #0a3d62;
+}
+
+.section-four-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.section-four-title {
+  font-family: "Mozilla Text";
+  font-size: 60px;
+  color: #079992;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.section-four-cards-holder {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 60px;
+}
+
+.section-four-card {
+  border: 2px solid #079992;
+  border-radius: 50px;
+  padding: 50px 0px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.section-four-width {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.section-four-card-text {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.section-four-card-title {
+  font-size: 22px;
+  color: #079992;
+  font-weight: 400;
+}
+
+.section-four-img {
+  width: 100px;
+  height: 100px;
+  filter: brightness(0) saturate(100%) invert(63%) sepia(46%) saturate(7326%)
+    hue-rotate(145deg) brightness(85%) contrast(94%);
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1350px) {
   .section-one-holder {
@@ -226,6 +295,11 @@
   }
 
   .section-three-holder {
+    width: 95%;
+    margin: 0px auto;
+  }
+
+  .section-four-holder {
     width: 95%;
     margin: 0px auto;
   }
@@ -276,8 +350,24 @@
     font-size: 50px;
   }
 
+  .section-four-title {
+    font-size: 50px;
+  }
+
   .section-three-card-title {
     font-size: 25px;
+  }
+
+  .section-four-cards-holder {
+    gap: 35px;
+  }
+
+  .section-four-card-text {
+    font-size: 14px;
+  }
+
+  .section-four-card-title {
+    font-size: 20px;
   }
 }
 
@@ -308,6 +398,10 @@
 
   .section-three-card-text {
     font-size: 14px;
+  }
+
+  .section-four-width {
+    width: 80%;
   }
 }
 
@@ -345,6 +439,28 @@
 
   .section-three-card-text {
     font-size: 18px;
+  }
+
+  .section-four-title {
+    text-align: center;
+  }
+
+  .section-four-cards-holder {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .section-four-card {
+    max-width: 850px;
+  }
+
+  .section-four-card-title {
+    font-size: 22px;
+  }
+
+  .section-four-card-text {
+    font-size: 20px;
   }
 }
 
