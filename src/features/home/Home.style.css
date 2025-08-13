@@ -283,6 +283,43 @@
     hue-rotate(145deg) brightness(85%) contrast(94%);
 }
 
+/* SECTION FIVE */
+.section-five {
+  padding: 10% 0;
+  background-image: url("src/assets/section-five-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  isolation: isolate;
+}
+
+.section-five::after {
+  content: "";
+  position: absolute;
+  background: hsl(205, 81%, 10%);
+  inset: 0;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+.section-five-holder {
+  max-width: 695px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-five-text {
+  color: #079992;
+  font-size: 36px;
+  font-family: "Mozilla Text";
+  text-align: center;
+  line-height: 1.5;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1350px) {
   .section-one-holder {
@@ -300,6 +337,11 @@
   }
 
   .section-four-holder {
+    width: 95%;
+    margin: 0px auto;
+  }
+
+  .section-five-holder {
     width: 95%;
     margin: 0px auto;
   }
@@ -462,6 +504,10 @@
   .section-four-card-text {
     font-size: 20px;
   }
+
+  .section-five-text {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -480,5 +526,9 @@
   .section-one-btn {
     max-width: 150px;
     font-size: 14px;
+  }
+
+  .section-five-text {
+    font-size: 18px;
   }
 }
