@@ -3,6 +3,7 @@ import sectionOneImg from "./section-one-img.jpg";
 import sectionThreeFirstImg from "./section-three-img.jpg";
 import sectionThreeSecondImg from "./section-three-img (2).jpg";
 import sectionThreeThirdImg from "./section-three-img (3).jpg";
+import sectionSevenImg from "./section-seven-img.jpg";
 
 const SectionOneLogo = ({ className }) => {
   return <img src={logo} alt="illustartion" className={className} />;
@@ -30,10 +31,15 @@ const SectionThreeThirdImg = ({ className }) => {
   );
 };
 
+const SectionSevenImg = ({ className }) => {
+  return <img src={sectionSevenImg} alt="illustration" className={className} />;
+};
+
 export {
   SectionOneLogo,
   SectionOneImg,
   SectionThreeFirstImg,
   SectionThreeSecondImg,
   SectionThreeThirdImg,
+  SectionSevenImg,
 };

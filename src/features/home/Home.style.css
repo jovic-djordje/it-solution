@@ -387,10 +387,95 @@
   font-size: 18px;
 }
 
+/* SECTION SEVEN */
+
+.section-seven-holder {
+  padding-bottom: 0px;
+}
+
+.section-seven-title {
+  font-size: 60px;
+}
+
+.section-seven-header-holder {
+  gap: 10px;
+}
+
+.section-seven-text {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Mozilla text";
+}
+
+.section-seven-btn {
+  margin-top: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  font-family: "Mozilla text";
+  margin-top: 50px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.phone p {
+  color: #079992;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.phone span {
+  color: #fff;
+}
+
+.social-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-seven-logo-holder {
+  background-color: #079992;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.section-seven-icon {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(22%) saturate(3204%)
+    hue-rotate(175deg) brightness(95%) contrast(97%);
+}
+
+.section-seven-img {
+  max-width: 600px;
+  width: 100%;
+  max-height: 750px;
+  object-fit: cover;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1350px) {
   .section-one-holder {
     padding: 30px 0px;
+  }
+
+  .section-seven-holder {
+    padding-bottom: 0px;
   }
 
   .section-two-holder {
@@ -444,6 +529,10 @@
     padding: 20px 0px;
   }
 
+  .section-seven-holder {
+    padding-bottom: 0px;
+  }
+
   .header-holder {
     gap: 30px;
   }
@@ -489,7 +578,7 @@
   }
 
   .section-six-card-text {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -532,6 +621,18 @@
 
   .section-four-width {
     width: 80%;
+  }
+
+  .section-seven-text {
+    font-size: 16px;
+  }
+
+  .section-seven-btn {
+    margin-top: 0px;
+  }
+
+  .section-seven-img {
+    max-width: 450px;
   }
 }
 
@@ -608,6 +709,10 @@
 
   .section-six-title {
     text-align: center;
+  }
+
+  .section-seven-img {
+    max-width: 850px;
   }
 }
 
